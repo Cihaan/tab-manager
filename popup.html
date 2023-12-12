@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-width: 250px;
+        background-color: #f5f5f5;
+      }
+      #search,
+      #urlSearch {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+      }
+      .tab {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+        background-color: #fff;
+        transition: background-color 0.3s ease;
+      }
+      .tab:hover {
+        background-color: #f0f0f0;
+      }
+      .close {
+        float: right;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="search" placeholder="Search tabs by title..." />
+    <input type="text" id="urlSearch" placeholder="Search tabs by URL..." />
+    <div id="results"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
